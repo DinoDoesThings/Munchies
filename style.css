@@ -660,55 +660,30 @@ article {
     margin: auto;
     table-layout: fixed;
     border-collapse: collapse;
-    width: 80%;
-    color: #333;
-    background-color: #f9f9f9;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.popup-table caption {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border-bottom: 2px solid #ddd;
+    width: 60%;
+    color: #ddd;
 }
   
-.popup-table th, .popup-table td {
-    padding: 12px;
+.popup-table, th, td {
+    border: 5px solid #ddd;
     text-align: center;
-    border: 1px solid #ddd;
 }
-
-.popup-table th {
-    border-radius: 8px;
-    background-color: #4CAF50;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.popup-table td {
-    background-color: #fff;
-    height: 80px;
-}
-
-.popup-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.popup-table tr:hover {
-    background-color: #e0e0e0;
-}
-
-.popup-table img {
-    max-width: 50px;
-    height: auto;
+  
+th > img{
+    width: 60%;
     border-radius: 50%;
+}
+  
+td > img {
+    width: 40%;
+}
+  
+th {
+    height: 65px;
+}
+  
+td {
+    height: 60px;
 }
   
 .overlay {
