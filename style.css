@@ -196,7 +196,7 @@ article {
 }
 
 .article-top img {
-    font-size: 8rem;
+    width: 40vw;
     color: #ddd;
     margin-top: 30vh;
     margin-left: auto;
@@ -214,7 +214,7 @@ article {
 }
 
 .article-top a {
-    margin-top: 200px;
+    margin-top: 20vh;
     margin-left: auto;
     margin-right: auto; 
     text-decoration: none;
@@ -643,7 +643,7 @@ article {
     background-color:#333;
     top: 50%;
     left: 50%;
-    width: 90%;
+    width: 80vw;
     height: auto;
     transform: translate(-50%, -50%);
     flex-direction: row;
