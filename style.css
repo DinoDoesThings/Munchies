@@ -534,7 +534,7 @@ article {
     margin-bottom: 2rem;
 }
   
-.food-wrapper p {
+.food-wrapper>p {
     font-size: 1.5rem;
     color: #ddd;
     margin-bottom: 2.5rem;
@@ -706,9 +706,12 @@ td {
   
   .popup-description p {
     color: #ddd;
-    text-align: center;
     overflow-y: auto;
     height: 200px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
   
   .popup-description h3 {
