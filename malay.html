@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Start Of Head -->
+
+  <head>
+    <title>Malaysian Cuisine</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Group ANT">
+    <meta name="description" content="This webpage will be displaying the variety of Malay cuisine in Kuching.">
+    <meta name="keywords" content="food, drinks, meals, western, chinese, juice, desserts, yummy, cakes, donuts, croissants">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Script Starts Here -->
+     <script>
+        function showPopup(popupId) {
+          const popup = document.getElementById(popupId);
+          popup.style.display = 'flex';
+          const overlay = document.getElementById('overlay');
+          overlay.style.display = 'block';
+        }
+        
+        function closePopup(popupId) {
+          const popup = document.getElementById(popupId);
+          popup.style.display = 'none';
+          const overlay = document.getElementById('overlay');
+          overlay.style.display = 'none';
+        }
+
+        function hidePopup() {
+          for (let i = 1; i <= 12; i++) {
+          const popup = document.getElementById(`popup${i}`);
+          popup.style.display = 'none';
+          const overlay = document.getElementById('overlay');
+            overlay.style.display = 'none';
+          }
+        }
+    </script>
+  </head>
+
+  <!-- Body Starts Here -->
+
+  <body>
+    
+    <!-- Header Starts Here -->
+
+    <header>
+      <nav class="navbar">
+        <div class="nav-left">
+          <ul class="menu">      
+              <li>
+                <a href="./index.html">
+                <img src="./images/companyassets/munchies-logoalt.png" alt="Logo">
+                </a>
+              </li>
+              <li class="nav-styling">
+                Desserts
+                <ul class="dropdown-content">
+                  <li><a href="./cakes.html">Cakes</a></li>
+                  <li><a href="./donuts.html">Donuts</a></li>
+                  <li><a href="./croissants.html">Croissants</a></li>
+                </ul>
+              </li>
+              <li class="nav-styling">
+                Meals
+                <ul class="dropdown-content">
+                  <li><a href="./western.html">Western</a></li>
+                  <li><a href="./chinese.html">Chinese</a></li>
+                  <li><a href="./malay.html">Malay</a></li>
+                </ul>
+              </li>
+              <li class="nav-styling">
+                Drinks
+                <ul class="dropdown-content">
+                  <li><a href="./coffee.html">Coffee</a></li>
+                  <li><a href="./tea.html">Tea</a></li>
+                  <li><a href="./juice.html">Juice</a></li>
+                </ul>
+              </li>
+              <li class="nav-links">
+                  <a href="./groupant.html">About Us</a>
+              </li>
+              <li class="nav-links">
+                  <a href="./feedback.html">Feedback</a>
+              </li>
+          </ul>
+        </div>  
+      </nav>
+    </header>
+
+    <!-- Article Starts Here -->
+    <!-- Make a new class for the article -->
+    <article class="article-global">
+      <section class="top-banner-malay">
+          <div class="banner-text fadeInUp-animation">
+              <h1>Malay</h1>
+          </div>
+      </section>
+
+        <!-- Food Sections Start Here -->
+        <!-- REMEMBER TO CHANGE THE IDS to UNIQUE ONES also CHANGE THE LABEL for= to match IDS (eg. a1,a2,a3 etc.) [Use the first letter of your food category + number.] -->
+
+      <section class="food-sections">
+        <div class="food-wrapper malay-con1">
+          <a href="https://papparich.my/">Papparich</a>
+          <hr>
+          <p>Discover the authentic flavors of Malaysia at Papparich, where tradition meets modern comfort. Indulge in a wide array of classic Malaysian dishes, from aromatic nasi lemak and flavorful char kuey teow to creamy curry laksa and refreshing Teh Tarik. With a warm ambiance and quality ingredients, Papparich offers a true taste of Malaysia, perfect for family gatherings, casual meals, or a quick coffee break.</p>
+          <div class="food-container">
+            <div class="food-item malayitem1">
+              <div class="background-blur"></div>
+              <div class="food-text" onclick="showPopup('popup1')">
+                <h2>Nasi Lemak</h2>
+              </div>
+            </div>
+            <div class="popup" id="popup1">
+              <img src="./images/meals/nasilemak.jpg" alt="Cote+de+Bouef" class="popup-image">
+              <div class="popup-description">
+                <h3>Nasi Lemak</h3>
+                <p> This fragrant coconut milk-infused rice is served alongside spicy sambal, crispy anchovies, crunchy peanuts, and a perfectly boiled egg. Choose from a variety of flavorful accompaniments, such as tender rendang, sambal prawns, or crispy fried chicken, to elevate your dining experience. </p>
+                <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">This food is <strong>HALAL.</strong></td>
+                    </tr>  
+                  </table>
+                <button class="close-button" onclick="closePopup('popup1')">Close</button>
+              </div>
+            </div>
+            <div class="food-item malayitem2">
+              <div class="background-blur"></div>
+              <div class="food-text" onclick="showPopup('popup2')">
+                <h2>Kampung Fried Rice</h2>
+              </div>
+            </div>
+            <div class="popup" id="popup2">
+              <img src="./images/meals/nasigorengkampung.jpg" alt="Item 2" class="popup-image">
+              <div class="popup-description">
+                <h3>Kampung Fried Rice</h3>
+                <p>This wok-fried rice is packed with aromatic spices, fresh vegetables, and tender pieces of chicken or prawns, all enhanced by the bold flavor of anchovies for a delightful crunch. Served with a sunny-side-up egg and a side of sambal for an extra kick, this dish offers a perfect balance of savory, spicy, and comforting flavors.</p>
+                <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">This food is <strong>HALAL.</strong></td>
+                    </tr>  
+                </table>
+                <button class="close-button" onclick="closePopup('popup2')">Close</button>
+              </div>
+            </div>
+            <div class="food-item malayitem3">
+              <div class="background-blur"></div>
+              <div class="food-text" onclick="showPopup('popup3')">
+                <h2>Mee Goreng Mamak</h2>
+              </div>
+            </div>
+            <div class="popup" id="popup3">
+              <img src="./images/meals/meegoreng.jpg" alt="Superior Angus Scotch Fillet" class="popup-image">
+              <div class="popup-description">
+                <h3>Mee Goreng Mamak</h3>
+                <p>This classic Malaysian street food favorite features wok-tossed yellow noodles, infused with a rich blend of spices, soy sauce, and chili paste. Loaded with tofu, vegetables, juicy prawns, and a squeeze of lime, it’s garnished with crispy shallots and a wedge of lime for a zesty kick.</p>
+                <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">This food is <strong>HALAL.</strong></td>
+                    </tr>  
+                </table>
+                <button class="close-button" onclick="closePopup('popup3')">Close</button>
+              </div>
+            </div>
+            <div class="food-item malayitem4">
+              <div class="background-blur"></div>
+              <div class="food-text" onclick="showPopup('popup4')">
+                <h2>Ipoh Kuey Teow</h2>
+              </div>
+            </div>
+            <div class="popup" id="popup4">
+              <img src="./images/meals/ipohkt.jpg" alt="Premium Angus Striploin" class="popup-image">
+              <div class="popup-description">
+                <h3>Ipoh Kuey Teow</h3>
+                <p>This silky flat rice noodle soup is served in a fragrant chicken and prawn broth, topped with tender chicken slices, juicy prawns, and fresh chives. Accompanied by a side of sambal for a spicy kick, this dish is a comforting and authentic Malaysian favorite, perfect for any time of the day.</p>
+                <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This food is <strong>HALAL.</strong></td>
+                    </tr> 
+                </table>
+                <button class="close-button" onclick="closePopup('popup4')">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- Second Vendor -->
+
+          <div class="food-wrapper malay-con2">
+            <a href="https://www.duduksama.com/">Duduksama Kopitiam</a>
+            <hr>
+            <p>Step into DudukSama Kopitiam, where tradition and community come together to create an authentic Malaysian dining experience. Rooted in the vibrant kopitiam culture, we offer a delightful range of classic dishes and beverages, from rich and creamy Hainanese coffee to hearty nasi lemak and perfectly toasted kaya bread. With a cozy, welcoming ambiance, DudukSama Kopitiam is the perfect spot to gather with friends, share stories, and enjoy the timeless flavors of Malaysia. </p>
+            <div class="food-container">
+              <div class="food-item malayitem5">
+                <div class="background-blur"></div>
+                <div class="food-text" onclick="showPopup('popup5')">
+                  <h2>Sarawak Laksa</h2>
+                </div>
+              </div>
+              <div class="popup" id="popup5">
+                <img src="./images/meals/laksasarawak.jpg" alt="Item 5" class="popup-image">
+                <div class="popup-description">
+                  <h3>Sarawak Laksa</h3>
+                  <p>The heart of Laksa  Sarawak is its creamy, slightly thick broth made from a blend of spices and herbs such as lemongrass, galangal, and garlic, cooked in a base of coconut milk and prawn or chicken stock. It is often spiced with sambal belacan and chili, giving it a mildly spicy kick.</p>
+                  <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This food is <strong>HALAL.</strong></td>
+                    </tr> 
+                  </table>
+                  <button class="close-button" onclick="closePopup('popup5')">Close</button>
+                </div>
+              </div>
+              <div class="food-item malayitem6">
+                <div class="background-blur"></div>
+                <div class="food-text" onclick="showPopup('popup6')">
+                  <h2>Kolo Mee</h2>
+                </div>
+              </div>
+              <div class="popup" id="popup6">
+                <img src="./images/meals/kolomee.jpg" alt="grilledlamb" class="popup-image">
+                <div class="popup-description">
+                  <h3>Kolo Mee</h3>
+                  <p>Kolo Mee is a popular and beloved noodle dish from the Malaysian state of Sarawak, particularly in the city of Kuching. It is known for its simplicity, delightful flavors, and distinct preparation method.</p>
+                  <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This food is <strong>NON-HALAL.</strong></td>
+                    </tr> 
+                  </table>
+                  <button class="close-button" onclick="closePopup('popup6')">Close</button>
+                </div>
+              </div>
+              <div class="food-item malayitem7">
+                <div class="background-blur"></div>
+                <div class="food-text" onclick="showPopup('popup7')">
+                  <h2>Mee Siam Ayam Goreng</h2>
+                </div>
+              </div>
+              <div class="popup" id="popup7">
+                <img src="./images/meals/meesiam.jpg" alt="Wagyu Burger" class="popup-image">
+                <div class="popup-description">
+                  <h3>Mee Siam Ayam Goreng</h3>
+                  <p>This dish features stir-fried vermicelli noodles infused with tangy tamarind, aromatic spices, and a hint of sweetness, perfectly balanced for a burst of flavor in every bite. Paired with a crispy and juicy fried chicken leg, a side of sambal, and a wedge of lime, this dish offers a delightful harmony of tastes and textures. </p>
+                  <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This food is <strong>HALAL.</strong></td>
+                    </tr> 
+                  </table>
+                  <button class="close-button" onclick="closePopup('popup7')">Close</button>
+                </div>
+              </div>
+              <div class="food-item malayitem8">
+                <div class="background-blur"></div>
+                <div class="food-text" onclick="showPopup('popup8')">
+                  <h2>Nasi Lemak Biasa</h2>
+                </div>
+              </div>
+              <div class="popup" id="popup8">
+                <img src="./images/meals/nasilemakbiasa.jpg" alt="Braised Lamb Shank" class="popup-image">
+                <div class="popup-description">
+                  <h3>Nasi Lemak Biasa</h3>
+                  <p>Nasi Lemak is a harmonious blend of flavors and textures, combining creamy rice, spicy sambal, and a variety of crunchy, fresh, and savory sides. It is a versatile dish enjoyed at any time of day, from breakfast to dinner, and it is a staple of Malaysian cuisine that captures the essence of the country's diverse culinary heritage.</p>
+                  <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This food is <strong>HALAL.</strong></td>
+                    </tr> 
+                  </table>
+                  <button class="close-button" onclick="closePopup('popup8')">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      <div class="overlay" id="overlay" onclick="hidePopup()"></div>
+    </article>
+
+    <!-- Footer Starts Here -->
+
+    <footer>
+      <section class="footer-dontsueplz">
+        <p>
+          &copy; Group ANT Last Updated: 2:51 p.m. 28/11/2024
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>

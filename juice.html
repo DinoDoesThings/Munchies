@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Start Of Head -->
+
+  <head>
+    <title>Juices</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Group ANT">
+    <meta name="description" content="This webpage will be displaying the various juiceries in Kuching.">
+    <meta name="keywords" content="food, drinks, meals, western, chinese, juice, desserts, yummy, cakes, donuts, croissants">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Script Starts Here -->
+     <script>
+        function showPopup(popupId) {
+          const popup = document.getElementById(popupId);
+          popup.style.display = 'flex';
+          const overlay = document.getElementById('overlay');
+          overlay.style.display = 'block';
+        }
+        
+        function closePopup(popupId) {
+          const popup = document.getElementById(popupId);
+          popup.style.display = 'none';
+          const overlay = document.getElementById('overlay');
+          overlay.style.display = 'none';
+        }
+
+        function hidePopup() {
+          for (let i = 1; i <= 12; i++) {
+          const popup = document.getElementById(`popup${i}`);
+          popup.style.display = 'none';
+          const overlay = document.getElementById('overlay');
+            overlay.style.display = 'none';
+          }
+        }
+    </script>
+  </head>
+
+  <!-- Body Starts Here -->
+
+  <body>
+    
+    <!-- Header Starts Here -->
+
+    <header>
+      <nav class="navbar">
+        <div class="nav-left">
+          <ul class="menu">      
+              <li>
+                <a href="./index.html">
+                <img src="./images/companyassets/munchies-logoalt.png" alt="Logo">
+                </a>
+              </li>
+              <li class="nav-styling">
+                Desserts
+                <ul class="dropdown-content">
+                  <li><a href="./cakes.html">Cakes</a></li>
+                  <li><a href="./donuts.html">Donuts</a></li>
+                  <li><a href="./croissants.html">Croissants</a></li>
+                </ul>
+              </li>
+              <li class="nav-styling">
+                Meals
+                <ul class="dropdown-content">
+                  <li><a href="./western.html">Western</a></li>
+                  <li><a href="./chinese.html">Chinese</a></li>
+                  <li><a href="./malay.html">Malay</a></li>
+                </ul>
+              </li>
+              <li class="nav-styling">
+                Drinks
+                <ul class="dropdown-content">
+                  <li><a href="./coffee.html">Coffee</a></li>
+                  <li><a href="./tea.html">Tea</a></li>
+                  <li><a href="./juice.html">Juice</a></li>
+                </ul>
+              </li>
+              <li class="nav-links">
+                  <a href="./groupant.html">About Us</a>
+              </li>
+              <li class="nav-links">
+                  <a href="./feedback.html">Feedback</a>
+              </li>
+          </ul>
+        </div>  
+      </nav>
+    </header>
+
+    <!-- Article Starts Here -->
+    <!-- Make a new class for the article -->
+    <article class="article-global">
+      <section class="top-banner-juices">
+          <div class="banner-text fadeInUp-animation">
+              <h1>Juices</h1>
+          </div>
+      </section>
+
+        <!-- Food Sections Start Here -->
+        <!-- REMEMBER TO CHANGE THE IDS to UNIQUE ONES also CHANGE THE LABEL for= to match IDS (eg. a1,a2,a3 etc.) [Use the first letter of your food category + number.] -->
+
+      <section class="food-sections">
+        <div class="food-wrapper juice-con1">
+          <a href="https://www.boostjuicebars.com.my/">BOOST</a>
+          <hr>
+          <p>Boost Juice is a global chain of smoothie and juice bars that originated in Australia. Known for its vibrant, health-focused menu, Boost Juice offers a variety of smoothies, fresh juices, and snacks made from natural ingredients like fruits, vegetables, and yogurt. The brand emphasizes wellness, using no artificial colors, flavors, or preservatives, and caters to a range of dietary preferences with options like vegan and dairy-free products. With its energetic vibe and commitment to healthy living, Boost Juice has become a popular choice for refreshing, nutritious drinks on the go.</p>
+          <div class="food-container">
+            <div class="food-item juiceitem1">
+              <div class="background-blur"></div>
+              <div class="food-text" onclick="showPopup('popup1')">
+                <h2>All Berry Bang</h2>
+              </div>
+            </div>
+            <div class="popup" id="popup1">
+              <img src="./images/drinks/allberrybang.jpg" alt="All Berry Bang" class="popup-image">
+              <div class="popup-description">
+                <h3>All Berry Bang</h3>
+                <p>The All Berry Bang from Boost Juice is a deliciously vibrant smoothie bursting with berry goodness. Made with a blend of strawberries, raspberries, blueberries, and apple juice, it's a refreshing and fruity drink that perfectly balances tart and sweet flavors. Finished with creamy banana and a touch of frozen yogurt, this smoothie is a favorite for those seeking a naturally energizing and antioxidant-rich treat.</p>
+                <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This drink is <strong>HALAL.</strong></td>
+                    </tr> 
+                  </table>
+                <button class="close-button" onclick="closePopup('popup1')">Close</button>
+              </div>
+            </div>
+            <div class="food-item juiceitem2">
+              <div class="background-blur"></div>
+              <div class="food-text" onclick="showPopup('popup2')">
+                <h2>Cookies & Cream</h2>
+              </div>
+            </div>
+            <div class="popup" id="popup2">
+              <img src="./images/drinks/cookies&cream.jpg" alt="cookies&cream" class="popup-image">
+              <div class="popup-description">
+                <h3>Cookies & Cream</h3>
+                <p>The Cookies and Cream from Boost Juice is an indulgent, dessert-inspired smoothie that’s perfect for satisfying your sweet tooth. It combines the rich flavor of crushed cookies with creamy vanilla ice cream and low-fat milk for a decadent yet smooth and velvety treat. This fan-favorite drink delivers a nostalgic flavor experience, making it a delightful choice for those looking to indulge in a little sweetness while on the go.</p>
+                <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                        <td></td>
+                        <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This drink is <strong>HALAL.</strong></td>
+                    </tr> 
+                  </table>
+                <button class="close-button" onclick="closePopup('popup2')">Close</button>
+              </div>
+            </div>
+            <div class="food-item juiceitem3">
+              <div class="background-blur"></div>
+              <div class="food-text" onclick="showPopup('popup3')">
+                <h2>Strawberry Squeeze</h2>
+              </div>
+            </div>
+            <div class="popup" id="popup3">
+              <img src="./images/drinks/strawberrysqueeze.jpg" alt="Strawberry Squeeze" class="popup-image">
+              <div class="popup-description">
+                <h3>Strawberry Squeeze</h3>
+                <p>The Strawberry Squeeze from Boost Juice is a classic, refreshing smoothie packed with the sweet and tangy flavor of strawberries. Blended with apple juice, creamy banana, and a hint of low-fat frozen yogurt, it delivers a perfect balance of fruitiness and smooth texture. This vibrant drink is a light, energizing option that’s both satisfying and bursting with natural goodness—perfect for a fruity treat anytime!</p>
+                <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This drink is <strong>HALAL.</strong></td>
+                    </tr> 
+                  </table>
+                <button class="close-button" onclick="closePopup('popup3')">Close</button>
+              </div>
+            </div>
+            <div class="food-item juiceitem4">
+              <div class="background-blur"></div>
+              <div class="food-text" onclick="showPopup('popup4')">
+                <h2>King William Chocolate</h2>
+              </div>
+            </div>
+            <div class="popup" id="popup4">
+              <img src="./images/drinks/chocolate.jpg" alt="King William Chocolate" class="popup-image">
+              <div class="popup-description">
+                <h3>King William Chocolate</h3>
+                <p>The King William Chocolate from Boost Juice is a rich and indulgent smoothie that’s a chocolate lover’s dream. Made with creamy low-fat milk, chocolate powder, and smooth frozen yogurt, it delivers a decadent yet satisfying flavor. This velvety treat is perfect for when you’re craving something sweet and chocolatey but still want the Boost Juice signature freshness.</p>
+                <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This drink is <strong>HALAL.</strong></td>
+                    </tr> 
+                  </table>
+                <button class="close-button" onclick="closePopup('popup4')">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- Second Vendor -->
+
+          <div class="food-wrapper juice-con2">
+            <a href="https://www.facebook.com/therawkitchenmalaysia/">The Raw Kitchen</a>
+            <hr>
+            <p>The Raw Kitchen is a vibrant, health-conscious establishment located in Malaysia, specializing in fresh, cold-pressed juices, smoothie bowls, and wellness-focused beverages. Known for its commitment to quality and sustainability, the juicery sources organic, locally-grown fruits and vegetables to craft nutrient-packed drinks bursting with flavor and health benefits. </p>
+            <div class="food-container">
+              <div class="food-item juiceitem5">
+                <div class="background-blur"></div>
+                <div class="food-text" onclick="showPopup('popup5')">
+                  <h2>Celery Juice</h2>
+                </div>
+              </div>
+              <div class="popup" id="popup5">
+                <img src="./images/drinks/celeryjuice.jpg" alt="celeryjuice" class="popup-image">
+                <div class="popup-description">
+                  <h3>Celery Juice</h3>
+                  <p>A pure, revitalizing elixir made from 100% fresh, cold-pressed celery, ensuring maximum nutrient retention and flavor. Known for its detoxifying and hydrating properties, this light, crisp juice is rich in essential vitamins like K and C, minerals such as potassium, and powerful antioxidants.</p>
+                  <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This drink is <strong>HALAL.</strong></td>
+                    </tr> 
+                  </table>
+                  <button class="close-button" onclick="closePopup('popup5')">Close</button>
+                </div>
+              </div>
+              <div class="food-item juiceitem6">
+                <div class="background-blur"></div>
+                <div class="food-text" onclick="showPopup('popup6')">
+                  <h2>Virus Vigilante</h2>
+                </div>
+              </div>
+              <div class="popup" id="popup6">
+                <img src="./images/drinks/virusvigilante.jpg" alt="virusvigilante" class="popup-image">
+                <div class="popup-description">
+                  <h3>Virus Vigilante</h3>
+                  <p>A powerhouse blend crafted to fortify your immune system and keep you feeling your best. This vibrant, cold-pressed juice combines the zesty tang of fresh citrus, such as oranges and lemons, with a fiery kick of ginger and turmeric, both renowned for their anti-inflammatory and antioxidant properties. A touch of raw honey or agave adds a natural sweetness, while black pepper enhances the bioavailability of the turmeric, maximizing its benefits.</p>
+                  <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This drink is <strong>HALAL.</strong></td>
+                    </tr> 
+                  </table>
+                  <button class="close-button" onclick="closePopup('popup6')">Close</button>
+                </div>
+              </div>
+              <div class="food-item juiceitem7">
+                <div class="background-blur"></div>
+                <div class="food-text" onclick="showPopup('popup7')">
+                  <h2>Green Cloud</h2>
+                </div>
+              </div>
+              <div class="popup" id="popup7">
+                <img src="./images/drinks/greencloud.jpg" alt="greencloud" class="popup-image">
+                <div class="popup-description">
+                  <h3>Green Cloud</h3>
+                  <p> The Raw Juicery's Green Cloud drink is a dreamy blend of nature's most nourishing ingredients, crafted to invigorate and refresh. This signature beverage combines nutrient-dense leafy greens like spinach and kale with the creamy smoothness of coconut water or almond milk, creating a perfectly balanced drink that's as indulgent as it is healthy.</p>
+                  <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This drink is <strong>HALAL.</strong></td>
+                    </tr> 
+                  </table>
+                  <button class="close-button" onclick="closePopup('popup7')">Close</button>
+                </div>
+              </div>
+              <div class="food-item juiceitem8">
+                <div class="background-blur"></div>
+                <div class="food-text" onclick="showPopup('popup8')">
+                  <h2>Passionfruit</h2>
+                </div>
+              </div>
+              <div class="popup" id="popup8">
+                <img src="./images/drinks/passionfruit.jpg" alt="passionfruit" class="popup-image">
+                <div class="popup-description">
+                  <h3>Passionfruit</h3>
+                  <p>The Raw Juicery's Passionfruit Juice is a tropical delight that perfectly balances tangy and sweet flavors in every sip. Made from fresh, sun-ripened passionfruit, this vibrant juice is packed with vitamin C, antioxidants, and dietary fiber, making it as nourishing as it is delicious.</p>
+                  <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This drink is <strong>HALAL.</strong></td>
+                    </tr> 
+                  </table>
+                  <button class="close-button" onclick="closePopup('popup8')">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      <div class="overlay" id="overlay" onclick="hidePopup()"></div>
+    </article>
+
+    <!-- Footer Starts Here -->
+    <footer>
+      <section class="footer-dontsueplz">
+        <p>
+          &copy; Group ANT Last Updated: 1:54am 19/11/2024
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>

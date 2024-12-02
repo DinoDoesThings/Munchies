@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Start Of Head -->
+
+  <head>
+    <title>Chinese Food</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Group ANT">
+    <meta name="description" content="This webpage will be displaying the variety of chinese cuisine in Kuching.">
+    <meta name="keywords" content="food, drinks, meals, western, chinese, juice, desserts, yummy, cakes, donuts, croissants">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Script Starts Here -->
+     <script>
+        function showPopup(popupId) {
+          const popup = document.getElementById(popupId);
+          popup.style.display = 'flex';
+          const overlay = document.getElementById('overlay');
+          overlay.style.display = 'block';
+        }
+        
+        function closePopup(popupId) {
+          const popup = document.getElementById(popupId);
+          popup.style.display = 'none';
+          const overlay = document.getElementById('overlay');
+          overlay.style.display = 'none';
+        }
+
+        function hidePopup() {
+          for (let i = 1; i <= 12; i++) {
+          const popup = document.getElementById(`popup${i}`);
+          popup.style.display = 'none';
+          const overlay = document.getElementById('overlay');
+            overlay.style.display = 'none';
+          }
+        }
+    </script>
+  </head>
+
+  <!-- Body Starts Here -->
+
+  <body>
+    
+    <!-- Header Starts Here -->
+
+    <header>
+      <nav class="navbar">
+        <div class="nav-left">
+          <ul class="menu">      
+              <li>
+                <a href="./index.html">
+                <img src="./images/companyassets/munchies-logoalt.png" alt="Logo">
+                </a>
+              </li>
+              <li class="nav-styling">
+                Desserts
+                <ul class="dropdown-content">
+                  <li><a href="./cakes.html">Cakes</a></li>
+                  <li><a href="./donuts.html">Donuts</a></li>
+                  <li><a href="./croissants.html">Croissants</a></li>
+                </ul>
+              </li>
+              <li class="nav-styling">
+                Meals
+                <ul class="dropdown-content">
+                  <li><a href="./western.html">Western</a></li>
+                  <li><a href="./chinese.html">Chinese</a></li>
+                  <li><a href="./malay.html">Malay</a></li>
+                </ul>
+              </li>
+              <li class="nav-styling">
+                Drinks
+                <ul class="dropdown-content">
+                  <li><a href="./coffee.html">Coffee</a></li>
+                  <li><a href="./tea.html">Tea</a></li>
+                  <li><a href="./juice.html">Juice</a></li>
+                </ul>
+              </li>
+              <li class="nav-links">
+                  <a href="./groupant.html">About Us</a>
+              </li>
+              <li class="nav-links">
+                  <a href="./feedback.html">Feedback</a>
+              </li>
+          </ul>
+        </div>  
+      </nav>
+    </header>
+
+    <!-- Article Starts Here -->
+    <!-- Make a new class for the article -->
+    <article class="article-global">
+      <section class="top-banner-chinese">
+          <div class="banner-text fadeInUp-animation">
+              <h1>Chinese</h1>
+          </div>
+      </section>
+
+        <!-- Food Sections Start Here -->
+        <!-- REMEMBER TO CHANGE THE IDS to UNIQUE ONES also CHANGE THE LABEL for= to match IDS (eg. a1,a2,a3 etc.) [Use the first letter of your food category + number.] -->
+
+      <section class="food-sections">
+        <div class="food-wrapper chinese-con1">
+          <a href="https://www.dintaifung.com.my/">Din Tai Fung</a> 
+          <hr>
+          <p>Exuality and precision, Din Tai Fung offers a dining experience that celebrates the rich traditions of Taiwanese cooking in a modern and welcoming setting.</p>
+          <div class="food-container">
+            <div class="food-item chineseitem1">
+              <div class="background-blur"></div>
+              <div class="food-text" onclick="showPopup('popup1')">
+                <h2>Braised Beef Noodle Soup</h2>
+              </div>
+            </div>
+            <div class="popup" id="popup1">
+              <img src="./images/meals/BBNS.jpg" alt="Cote+de+Bouef" class="popup-image">
+              <div class="popup-description">
+                <h3>Braised Beef Noodle Soup</h3>
+                <p>This comforting dish features tender, slow-braised beef in a flavorful broth, paired with perfectly cooked noodles and fresh greens. Infused with aromatic spices, it's a satisfying bowl of warmth and goodness, perfect for any occasion. A must-try for noodle and beef lovers alike!</p>
+                <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">This food is <strong>HALAL.</strong></td>
+                    </tr> 
+                  </table>
+                <button class="close-button" onclick="closePopup('popup1')">Close</button>
+              </div>
+            </div>
+            <div class="food-item chineseitem2">
+              <div class="background-blur"></div>
+              <div class="food-text" onclick="showPopup('popup2')">
+                <h2>Chicken Noodle Soup</h2>
+              </div>
+            </div>
+            <div class="popup" id="popup2">
+              <img src="./images/meals/CNS.jpg" alt="ChickenNoodleSoup" class="popup-image">
+              <div class="popup-description">
+                <h3>Chicken Noodle Soup</h3>
+                <p>This classic dish features tender chicken pieces in a clear, flavorful broth, served with springy noodles and fresh vegetables. Simple yet satisfying, it's a heartwarming meal that brings a touch of home with every spoonful.</p>
+                <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This food is <strong>HALAL.</strong></td>
+                    </tr>
+                  </table>
+                <button class="close-button" onclick="closePopup('popup2')">Close</button>
+              </div>
+            </div>
+            <div class="food-item chineseitem3">
+              <div class="background-blur"></div>
+              <div class="food-text" onclick="showPopup('popup3')">
+                <h2>Fried Pork Chop</h2>
+              </div>
+            </div>
+            <div class="popup" id="popup3">
+              <img src="./images/meals/friedporkchop.jpg" alt="FriedPorkChop" class="popup-image">
+              <div class="popup-description">
+                <h3>Fried Pork Chop</h3>
+                <p>Each porkchop is expertly seasoned, marinated, and then grilled to golden-brown perfection, offering a crispy exterior with a juicy and tender interior. Paired with a savory sauce that enhances the natural richness of the pork, this dish is a comforting, satisfying choice that highlights Din Tai Fung's dedication to quality and flavor.</p>
+                <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This food is <strong>NON-HALAL.</strong></td>
+                    </tr>
+                  </table>
+                <button class="close-button" onclick="closePopup('popup3')">Close</button>
+              </div>
+            </div>
+            <div class="food-item chineseitem4">
+              <div class="background-blur"></div>
+              <div class="food-text" onclick="showPopup('popup4')">
+                <h2>Pork Chop Egg Fried Rice</h2>
+              </div>
+            </div>
+            <div class="popup" id="popup4">
+              <img src="./images/meals/porkfriedrice.jpg" alt="PorkFriedRice" class="popup-image">
+              <div class="popup-description">
+                <h3>Pork Chop Egg Fried Rice</h3>
+                <p>This dish features fragrant, wok-fried rice cooked with fluffy eggs and aromatic seasonings, paired with a perfectly seasoned and tender pork chop.</p>
+                <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This food is <strong>NON-HALAL.</strong></td>
+                    </tr>
+                  </table>
+                <button class="close-button" onclick="closePopup('popup4')">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- Second Vendor -->
+
+          <div class="food-wrapper chinese-con2">
+            <a href="https://rockrd.com/">Rock Road Seafood Restaurant</a>
+            <hr>
+            <p>Indulge in a culinary seafood feast at Rock Road Seafood Restaurant, a Sarawakian icon renowned for its fresh seafood and authentic flavors. Specializing in local and Asian-inspired dishes, the menu features signature favorites like butter prawns, crispy soft-shell crab, and their famous satay sauce crabs. With a focus on quality ingredients and exceptional service, Rock Road Seafood Restaurant offers a memorable dining experience, perfect for family gatherings, celebrations, or simply enjoying the best of Sarawak's seafood cuisine. </p>
+            <div class="food-container">
+              <div class="food-item chineseitem5">
+                <div class="background-blur"></div>
+                <div class="food-text" onclick="showPopup('popup5')">
+                  <h2>Szechuan Hot & Sour Soup</h2>
+                </div>
+              </div>
+              <div class="popup" id="popup5">
+                <img src="./images/meals/shss.jpg" alt="Item 5" class="popup-image">
+                <div class="popup-description">
+                  <h3>Szechuan Hot & Sour Soup</h3>
+                  <p>This classic dish combines a rich, savory broth with a perfect balance of tangy vinegar and spicy Szechuan pepper. Loaded with tender tofu, mushrooms, bamboo shoots, and a medley of fresh ingredients, each spoonful is a symphony of heat and zest.</p>
+                  <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This food is <strong>HALAL.</strong></td>
+                    </tr>
+                  </table>
+                  <button class="close-button" onclick="closePopup('popup5')">Close</button>
+                </div>
+              </div>
+              <div class="food-item chineseitem6">
+                <div class="background-blur"></div>
+                <div class="food-text" onclick="showPopup('popup6')">
+                  <h2>Signature Hainanese Special Crab</h2>
+                </div>
+              </div>
+              <div class="popup" id="popup6">
+                <img src="./images/meals/hainanesecrab.jpg" alt="hainanesecrab" class="popup-image">
+                <div class="popup-description">
+                  <h3>Signature Hainanese Special Crab</h3>
+                  <p>This iconic dish features succulent, fresh crabs cooked to perfection in a rich, flavorful Hainanese-style sauce. With its blend of savory, sweet, and aromatic spices, this specialty captures the essence of Sarawak's culinary heritage.</p>
+                  <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This food is <strong>HALAL.</strong></td>
+                    </tr>
+                  </table>
+                  <button class="close-button" onclick="closePopup('popup6')">Close</button>
+                </div>
+              </div>
+              <div class="food-item chineseitem7">
+                <div class="background-blur"></div>
+                <div class="food-text" onclick="showPopup('popup7')">
+                  <h2>Yangzhou Fried Rice</h2>
+                </div>
+              </div>
+              <div class="popup" id="popup7">
+                <img src="./images/meals/yangzhou.jpg" alt="yangzhou" class="popup-image">
+                <div class="popup-description">
+                  <h3>Yangzhou Fried Rice</h3>
+                  <p> This classic dish features fragrant, wok-fried rice tossed with succulent shrimp, tender chicken, eggs, and a medley of fresh vegetables. Perfectly seasoned and expertly prepared, it’s a harmonious blend of flavors and textures that make it a crowd-pleaser for all ages.</p>
+                  <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This food is <strong>HALAL.</strong></td>
+                    </tr>
+                  </table>
+                  <button class="close-button" onclick="closePopup('popup7')">Close</button>
+                </div>
+              </div>
+              <div class="food-item chineseitem8">
+                <div class="background-blur"></div>
+                <div class="food-text" onclick="showPopup('popup8')">
+                  <h2>Hong Kong Style Braised Noodles</h2>
+                </div>
+              </div>
+              <div class="popup" id="popup8">
+                <img src="./images/meals/braisednoodles.jpg" alt="braisednoodles" class="popup-image">
+                <div class="popup-description">
+                  <h3>Hong Kong Style Braised Noodles</h3>
+                  <p>  This dish features tender, perfectly braised noodles served in a flavorful, aromatic sauce made with premium ingredients. Topped with succulent pieces of meat or seafood and fresh vegetables, every bite delivers a satisfying balance of textures and deep, savory flavors. A comforting and hearty dish that brings the essence of Hong Kong’s culinary traditions to your table!</p>
+                  <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This food is <strong>NON-HALAL.</strong></td>
+                    </tr>
+                  </table>
+                  <button class="close-button" onclick="closePopup('popup8')">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      <div class="overlay" id="overlay" onclick="hidePopup()"></div>
+    </article>
+
+    <!-- Footer Starts Here -->
+
+    <footer>
+      <section class="footer-dontsueplz">
+        <p>
+          &copy; Group ANT Last Updated: 1:54am 19/11/2024
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>

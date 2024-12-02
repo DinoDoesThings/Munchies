@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Start Of Head -->
+
+  <head>
+    <title>Coffee</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Group ANT">
+    <meta name="description" content="This webpage displays information about coffee.">
+    <meta name="keywords" content="food, drinks, meals, western, chinese, juice, desserts, yummy, cakes, donuts, croissants">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Script Starts Here -->
+     <script>
+        function showPopup(popupId) {
+          const popup = document.getElementById(popupId);
+          popup.style.display = 'flex';
+          const overlay = document.getElementById('overlay');
+          overlay.style.display = 'block';
+        }
+        
+        function closePopup(popupId) {
+          const popup = document.getElementById(popupId);
+          popup.style.display = 'none';
+          const overlay = document.getElementById('overlay');
+          overlay.style.display = 'none';
+        }
+
+        function hidePopup() {
+          for (let i = 1; i <= 12; i++) {
+          const popup = document.getElementById(`popup${i}`);
+          popup.style.display = 'none';
+          const overlay = document.getElementById('overlay');
+            overlay.style.display = 'none';
+          }
+        }
+    </script>
+  </head>
+
+  <!-- Body Starts Here -->
+
+  <body>
+    
+    <!-- Header Starts Here -->
+
+    <header>
+      <nav class="navbar">
+        <div class="nav-left">
+          <ul class="menu">      
+              <li>
+                <a href="./index.html">
+                <img src="./images/companyassets/munchies-logoalt.png" alt="Logo">
+                </a>
+              </li>
+              <li class="nav-styling">
+                Desserts
+                <ul class="dropdown-content">
+                  <li><a href="./cakes.html">Cakes</a></li>
+                  <li><a href="./donuts.html">Donuts</a></li>
+                  <li><a href="./croissants.html">Croissants</a></li>
+                </ul>
+              </li>
+              <li class="nav-styling">
+                Meals
+                <ul class="dropdown-content">
+                  <li><a href="./western.html">Western</a></li>
+                  <li><a href="./chinese.html">Chinese</a></li>
+                  <li><a href="./malay.html">Malay</a></li>
+                </ul>
+              </li>
+              <li class="nav-styling">
+                Drinks
+                <ul class="dropdown-content">
+                  <li><a href="./coffee.html">Coffee</a></li>
+                  <li><a href="./tea.html">Tea</a></li>
+                  <li><a href="./juice.html">Juice</a></li>
+                </ul>
+              </li>
+              <li class="nav-links">
+                  <a href="./groupant.html">About Us</a>
+              </li>
+              <li class="nav-links">
+                  <a href="./feedback.html">Feedback</a>
+              </li>
+          </ul>
+        </div>  
+      </nav>
+    </header>
+
+    <!-- Article Starts Here -->
+    <!-- Make a new class for the article -->
+    <article class="article-global">
+      <section class="top-banner-coffee">
+          <div class="banner-text fadeInUp-animation">
+              <h1>Coffee</h1>
+          </div>
+      </section>
+
+        <!-- Food Sections Start Here -->
+        <!-- REMEMBER TO CHANGE THE IDS to UNIQUE ONES also CHANGE THE LABEL for= to match IDS (eg. a1,a2,a3 etc.) [Use the first letter of your food category + number.] -->
+
+      <section class="food-sections">
+        <div class="food-wrapper coffee-con1">
+          <a href="https://www.starbucks.com.my/starbucks-malaysia">Starbucks Coffee</a>
+          <hr>
+          <p>A globally recognized coffeehouse chain founded in 1971 renowned for its premium coffee and exceptional customer experience. They pride themselves in their dedication to sourcing high-quality Arabica coffee beans and the comfortablility of their cafes.</p>
+          <div class="food-container">
+            <div class="food-item coffeeitem1">
+              <div class="background-blur"></div>
+              <div class="food-text" onclick="showPopup('popup1')">
+                <h2>Caramel Macchiato</h2>
+              </div>
+            </div>
+            <div class="popup" id="popup1">
+              <img src="./images/drinks/caramelmacchiato.jpg" alt="Item 1" class="popup-image">
+              <div class="popup-description">
+                <h3>Caramel Macchiato</h3>
+                <p>A signature drink of Starbucks combining steamed milk with vanilla syrup, topped with espresso and a caramel drizzle, offering a harmonious blend of sweetness and rich coffee flavour.</p>
+                <table class="popup-table">
+                  <caption><strong>Allergens</strong></caption>
+                  <tr>
+                    <th>Milk
+                      <br>
+                      <img src="./images/icons/milk-icon.png" alt="milk icon">
+                    </th>
+                    <th>Eggs
+                      <br>
+                      <img src="./images/icons/egg-icon.png" alt="egg icon">
+                    </th>
+                    <th>Peanuts
+                      <br>
+                      <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                    </th>
+                  </tr>
+                  <tr>
+                    <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                    <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                    <td></td>
+                  </tr> 
+                  <tr>
+                    <td colspan="3">This drink is <strong>HALAL.</strong></td>
+                  </tr> 
+                </table>
+                <button class="close-button" onclick="closePopup('popup1')">Close</button>
+              </div>
+            </div>
+            <div class="food-item coffeeitem2">
+              <div class="background-blur"></div>
+              <div class="food-text" onclick="showPopup('popup2')">
+                <h2>Pumpkin Spice Latte</h2>
+              </div>
+            </div>
+            <div class="popup" id="popup2">
+              <img src="./images/drinks/pumpkinspicelatte.jpg" alt="Item 2" class="popup-image">
+              <div class="popup-description">
+                <h3>Pumpkin Spice Latte</h3>
+                <p>A seasonal favourite, this latte features espresso and steamed milk infused with flavours of pumpkin, cinnamon, nutmeg and clove topped with whipped cream and pumpkin spice.</p>
+                <table class="popup-table">
+                  <caption><strong>Allergens</strong></caption>
+                  <tr>
+                    <th>Milk
+                      <br>
+                      <img src="./images/icons/milk-icon.png" alt="milk icon">
+                    </th>
+                    <th>Eggs
+                      <br>
+                      <img src="./images/icons/egg-icon.png" alt="egg icon">
+                    </th>
+                    <th>Peanuts
+                      <br>
+                      <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                    </th>
+                  </tr>
+                  <tr>
+                    <td><img src="./images/icons/checkbox.png" alt="Checkbox">></td>
+                    <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                    <td></td>
+                  </tr> 
+                  <tr>
+                    <td colspan="3">This drink is <strong>HALAL.</strong></td>
+                  </tr> 
+                </table>
+                <button class="close-button" onclick="closePopup('popup2')">Close</button>
+              </div>
+            </div>
+            <div class="food-item coffeeitem3">
+              <div class="background-blur"></div>
+              <div class="food-text" onclick="showPopup('popup3')">
+                <h2>Caffè Mocha</h2>
+              </div>
+            </div>
+            <div class="popup" id="popup3">
+              <img src="./images/drinks/caffemocha.jpg" alt="Item 3" class="popup-image">
+              <div class="popup-description">
+                <h3>Caffè Mocha</h3>
+                <p>A harmonious blend of espresso, steamed milk and rich chocolate syrup, topped with whipped cream, this indulgent beverage satisfies both coffee and chocolate cravings.</p>
+                <table class="popup-table">
+                  <caption><strong>Allergens</strong></caption>
+                  <tr>
+                    <th>Milk
+                      <br>
+                      <img src="./images/icons/milk-icon.png" alt="milk icon">
+                    </th>
+                    <th>Eggs
+                      <br>
+                      <img src="./images/icons/egg-icon.png" alt="egg icon">
+                    </th>
+                    <th>Peanuts
+                      <br>
+                      <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                    </th>
+                  </tr>
+                  <tr>
+                    <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                    <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                    <td></td>
+                  </tr> 
+                  <tr>
+                    <td colspan="3">This drink is <strong>HALAL.</strong></td>
+                  </tr> 
+                </table>
+                <button class="close-button" onclick="closePopup('popup3')">Close</button>
+              </div>
+            </div>
+            <div class="food-item coffeeitem4">
+              <div class="background-blur"></div>
+              <div class="food-text" onclick="showPopup('popup4')">
+                <h2>Vanilla Sweet Cream Cold Brew</h2>
+              </div>
+            </div>
+            <div class="popup" id="popup4">
+              <img src="./images/drinks/vsccoldbrew.jpg" alt="Item 4" class="popup-image">
+              <div class="popup-description">
+                <h3>Vanilla Sweet Cream Cold Brew</h3>
+                <p>A customer favourite combining smooth, slow-steeped cold brew with a touch of vanilla syrup and a float of house-made vanilla sweet cream offering a subtly sweet and creamy flavour, enchancing the natural richness of cold brew.</p>
+                <table class="popup-table">
+                  <caption><strong>Allergens</strong></caption>
+                  <tr>
+                    <th>Milk
+                      <br>
+                      <img src="./images/icons/milk-icon.png" alt="milk icon">
+                    </th>
+                    <th>Eggs
+                      <br>
+                      <img src="./images/icons/egg-icon.png" alt="egg icon">
+                    </th>
+                    <th>Peanuts
+                      <br>
+                      <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                    </th>
+                  </tr>
+                  <tr>
+                    <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                    <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                    <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                  </tr> 
+                  <tr>
+                    <td colspan="3">This drink is <strong>HALAL.</strong></td>
+                  </tr> 
+                </table>
+                <button class="close-button" onclick="closePopup('popup4')">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- Second Vendor -->
+
+          <div class="food-wrapper coffee-con2">
+            <a href="https://zuscoffee.com/bm/">ZUS Coffee</a>
+            <hr>
+            <p>A Malaysian coffee chain established in 2019 aiming to revolutionize coffee transforming from a luxury to a necessity by offering premium beverages at affordable prices.</p>
+            <div class="food-container">
+              <div class="food-item coffeeitem5">
+                <div class="background-blur"></div>
+                <div class="food-text" onclick="showPopup('popup5')">
+                  <h2>ZUS Gula Melaka</h2>
+                </div>
+              </div>
+              <div class="popup" id="popup5">
+                <img src="./images/drinks/zus-gula-melaka.jpg" alt="Item 5" class="popup-image">
+                <div class="popup-description">
+                  <h3>ZUS Gula Melaka</h3>
+                  <p>This signature drink combines espresso with Malaysian Gula Apong syrup resulting in a rich and aromatic flavour.</p>
+                  <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">This drink is <strong>HALAL.</strong></td>
+                    </tr> 
+                  </table>
+                  <button class="close-button" onclick="closePopup('popup5')">Close</button>
+                </div>
+              </div>
+              <div class="food-item coffeeitem6">
+                <div class="background-blur"></div>
+                <div class="food-text" onclick="showPopup('popup6')">
+                  <h2>The Thunder</h2>
+                </div>
+              </div>
+              <div class="popup" id="popup6">
+                <img src="./images/drinks/zus-thunder.jpg" alt="Item 6" class="popup-image">
+                <div class="popup-description">
+                  <h3>The Thunder</h3>
+                  <p>A bold and invigorating beverage incorporating honey lemon syrup and lemon juice crafted to deliver a strong caffiene kick.</p>
+                  <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This drink is <strong>HALAL.</strong></td>
+                    </tr> 
+                  </table>
+                  <button class="close-button" onclick="closePopup('popup6')">Close</button>
+                </div>
+              </div>
+              <div class="food-item coffeeitem7">
+                <div class="background-blur"></div>
+                <div class="food-text" onclick="showPopup('popup7')">
+                  <h2>Genmai Matcha Latte</h2>
+                </div>
+              </div>
+              <div class="popup" id="popup7">
+                <img src="./images/drinks/genmailatte.jpg" alt="Item 7" class="popup-image">
+                <div class="popup-description">
+                  <h3>Genmai Matcha Latte</h3>
+                  <p>A harmonious blend of premiumm matcha and roasted brown rice, offering a unique twist on the classic matcha latte.</p>
+                  <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This drink is <strong>HALAL.</strong></td>
+                    </tr> 
+                  </table>
+                  <button class="close-button" onclick="closePopup('popup7')">Close</button>
+                </div>
+              </div>
+              <div class="food-item coffeeitem8">
+                <div class="background-blur"></div>
+                <div class="food-text" onclick="showPopup('popup8')">
+                  <h2>Black Sugar Latte</h2>
+                </div>
+              </div>
+              <div class="popup" id="popup8">
+                <img src="./images/drinks/blacksugar-latte.jpg" alt="Item 8" class="popup-image">
+                <div class="popup-description">
+                  <h3>Black Sugar Latte</h3>
+                  <p>A delightful fusion of espresso and black sugar syrup, providing a deep, caramelized sweetness that complements the robust coffee notes.</p>
+                  <table class="popup-table">
+                    <caption><strong>Allergens</strong></caption>
+                    <tr>
+                      <th>Milk
+                        <br>
+                        <img src="./images/icons/milk-icon.png" alt="milk icon">
+                      </th>
+                      <th>Eggs
+                        <br>
+                        <img src="./images/icons/egg-icon.png" alt="egg icon">
+                      </th>
+                      <th>Peanuts
+                        <br>
+                        <img src="./images/icons/peanut-icon.png" alt="peanut icon">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td><img src="./images/icons/checkbox.png" alt="Checkbox"></td>
+                      <td></td>
+                    </tr> 
+                    <tr>
+                      <td colspan="3">This drink is <strong>HALAL.</strong></td>
+                    </tr> 
+                  </table>
+                  <button class="close-button" onclick="closePopup('popup8')">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      <div class="overlay" id="overlay" onclick="hidePopup()"></div>
+    </article>
+
+    <!-- Footer Starts Here -->
+    <footer>
+      <section class="footer-dontsueplz">
+        <p>
+          &copy; Group ANT Last Updated: 5:54pm 20/11/2024
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>

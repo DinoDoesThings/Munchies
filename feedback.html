@@ -1,0 +1,182 @@
+<!-- Feedback HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Feedback Form</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Group ANT">
+    <meta name="description" content="This webpage allows users to send us meaningful feedback.">
+    <meta name="keywords" content="food, drinks, meals, western, chinese, juice, desserts, yummy, cakes, donuts, croissants">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Script Starts Here -->
+   <script>
+
+   //To access the stars
+    let stars = 
+        document.getElementsByClassName("star");
+    let output = 
+         document.getElementById("output");
+
+        // Function to update rating
+        function updateRating(n) {
+            remove();
+            let cls;
+            for (let i = 0; i < n; i++) {
+                if (n == 1) cls = "one";
+                else if (n == 2) cls = "two";
+                else if (n == 3) cls = "three";
+                else if (n == 4) cls = "four";
+                else if (n == 5) cls = "five";
+                stars[i].className = "star " + cls;
+            }
+            output.innerText = "Rating is: " + n + "/5";
+        }
+
+        // To remove the pre-applied styling
+        function remove() {
+            let i = 0;
+            while (i < 5) {
+                stars[i].className = "star";
+                i++;
+            }
+        }
+
+  </script>
+
+</head>
+
+<body>
+    
+    <!-- Header Starts Here -->
+
+    <header>
+      <nav class="navbar">
+        <div class="nav-left">
+          <ul class="menu">      
+              <li>
+                <a href="./index.html">
+                <img src="./images/companyassets/munchies-logoalt.png" alt="Logo">
+                </a>
+              </li>
+              <li class="nav-styling">
+                Desserts
+                <ul class="dropdown-content">
+                  <li><a href="./cakes.html">Cakes</a></li>
+                  <li><a href="./donuts.html">Donuts</a></li>
+                  <li><a href="./croissants.html">Croissants</a></li>
+                </ul>
+              </li>
+              <li class="nav-styling">
+                Meals
+                <ul class="dropdown-content">
+                  <li><a href="./western.html">Western</a></li>
+                  <li><a href="./chinese.html">Chinese</a></li>
+                  <li><a href="./malay.html">Malay</a></li>
+                </ul>
+              </li>
+              <li class="nav-styling">
+                Drinks
+                <ul class="dropdown-content">
+                  <li><a href="./coffee.html">Coffee</a></li>
+                  <li><a href="./tea.html">Tea</a></li>
+                  <li><a href="./juice.html">Juice</a></li>
+                </ul>
+              </li>
+              <li class="nav-links">
+                  <a href="./groupant.html">About Us</a>
+              </li>
+              <li class="nav-links">
+                  <a href="./feedback.html">Feedback</a>
+              </li>
+          </ul>
+        </div>  
+      </nav>
+    </header>
+
+    <article class="article-feedback">
+        <section class="feedback-section">
+            <div class="feedback-container">
+                <h1>Send us feedback!</h1>
+                <form name="feedback-form" method="post" action="mailto:sheikhnabilhaikal@gmail.com" enctype="text/plain">
+                    <fieldset>
+                        <legend>User Information</legend>
+                        <table class="feedback-table">
+                            <tr>
+                                <td>1.</td>
+                                <td><label for="name">Name</label></td>
+                                <td>
+                                    <input type="text" name="name" placeholder="Include your first and last name." maxlength="40" required id="name"></td>
+                            </tr>
+                            <tr>
+                                <td><h2>2.</h2></td>
+                                <td><label for="email">Email Address</label></td>
+                                <td>
+                                    <input type="email" id="email" name="email" size="40">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Review</legend>
+                        <table class="feedback-table">
+                            <tr>
+                                <td>1.</td>
+                                <td>Which one of the food genres were you most satisfied with:</td>
+                                <td>
+                                    <select name='food-genres' size="1">
+                                        <optgroup label="Food Genres">
+                                            <option value="Western" selected>Western</option>
+                                            <option value="Malaysian">Malaysian</option>
+                                            <option value="Chinese">Chinese</option>
+                                            <option value="none">None</option>
+                                        </optgroup>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>How would you rate our website?</td>
+                                <td>
+                                    <div class="rating">
+                                        <span class="star" onclick="updateRating(1)">★</span>
+                                        <span class="star" onclick="updateRating(2)">★</span>
+                                        <span class="star" onclick="updateRating(3)">★</span>
+                                        <span class="star" onclick="updateRating(4)">★</span>
+                                        <span class="star" onclick="updateRating(5)">★</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td><label for="comment">Any suggestions for our website? Let us know!</label></td>
+                                <td>
+                                    <textarea name="improvements" id="comment" cols="40" rows="5" placeholder="Please leave your feedback here." required></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <button type="submit" class="submit-button">Submit Feedback</button>
+                </form>
+            </div>
+        </section>
+    </article>
+
+    <!-- Footer Starts Here -->
+    <footer>
+        <section class="footer-dontsueplz">
+          <p>
+            &copy; Group ANT Last Updated: 1:54am 19/11/2024
+          </p>
+        </section>
+      </footer>
+
+</body>
+</html> 
