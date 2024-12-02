@@ -644,7 +644,7 @@ article {
     top: 50%;
     left: 50%;
     width: 80vw;
-    height: auto;
+    max-height: 90vh;
     transform: translate(-50%, -50%);
     flex-direction: row;
     justify-content: center;
@@ -660,30 +660,57 @@ article {
     margin: auto;
     table-layout: fixed;
     border-collapse: collapse;
-    width: 60%;
-    color: #ddd;
+    width: 80%;
+    height: auto;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.popup-table caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #ddd;
 }
   
-.popup-table, th, td {
-    border: 5px solid #ddd;
+.popup-table th, .popup-table td {
+    padding: 12px;
     text-align: center;
+    border: 1px solid #ddd;
 }
-  
-th > img{
-    width: 60%;
+
+.popup-table th {
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 10vh;
+}
+
+.popup-table td {
+    background-color: #fff;
+    height: 10vh;
+}
+
+.popup-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.popup-table tr:hover {
+    background-color: #e0e0e0;
+}
+
+.popup-table img {
+    max-width: 50px;
+    height: auto;
     border-radius: 50%;
-}
-  
-td > img {
-    width: 40%;
-}
-  
-th {
-    height: 65px;
-}
-  
-td {
-    height: 60px;
 }
   
 .overlay {
@@ -706,10 +733,11 @@ td {
   
   .popup-description p {
     color: #ddd;
-    overflow-y: auto;
+    overflow-x: hidden;
     height: 200px;
     font-size: 1.5rem;
     text-align: center;
+    margin-top: 8px;
     padding-left: 2rem;
     padding-right: 2rem;
 }
@@ -720,11 +748,10 @@ td {
 }
   
   .popup-image {
-    width: 40vw;
+    width: 100%;
+    max-height: 50vh; /* Ensure the image doesn't exceed half the viewport height */
     margin: 50px;
     border-radius: 15px;
-    margin-top: auto;
-    margin-bottom: auto;
 }
   
   .close-button {
