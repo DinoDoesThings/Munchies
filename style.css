@@ -534,12 +534,17 @@ article {
     margin-bottom: 2rem;
 }
   
-.food-wrapper>p {
+.food-wrapper ul{
+    padding-left: 2rem;
+}
+  
+.food-wrapper ul li {
+    list-style-type: circle;
     font-size: 1.5rem;
     color: #ddd;
     margin-bottom: 2.5rem;
     text-align: justify;
-    padding-left: 2rem;
+    padding-left: 1rem;
     padding-right: 2rem;
 }
 
