@@ -334,14 +334,17 @@
     transition: all 0.3s ease;
   }
   
+  /* Container is originally hidden. */
   .container input {
     display: none;
   }
   
+  /* When the container is clicked, it will expand. */
   .container input:checked + label {
     width: 80vw;
   }
   
+  /* The text will appear and be clickable. */
   .container input:checked + label .description a {
     opacity: 1 !important;
     pointer-events: auto !important;
@@ -350,6 +353,7 @@
     font-weight: bold;
   }
   
+  /* Icon will move smoothly. */
   .container input:checked + label .icon {
     transition: all 0.3s ease;
   }
@@ -662,7 +666,7 @@
     margin-right: 1rem;
   }
 
-*/ table styling to  fit the content in popup boxes */
+/* table styling to  fit the content in popup boxes */
   .popup-table {
     margin: auto;
     table-layout: fixed;
@@ -732,7 +736,7 @@
     z-index: 999;
   }
 
-*/ description for the content inside popup boxes */
+/* description for the content inside popup boxes */
   .popup-description {
     display: flex;
     width: auto;
@@ -756,7 +760,7 @@
     color: #ddd;
   }
 
-*/ Image for content in the popup boxes */
+/* Image for content in the popup boxes */
   .popup-image {
     width: 100%;
     max-height: 50vh; /* Ensure the image doesn't exceed half the viewport height */
@@ -764,7 +768,7 @@
     border-radius: 15px;
   }
 
-*/ Button to close and exit the pop ups */
+/* Button to close and exit the pop ups */
   .close-button {
     border: none;
     border-radius: 10px;
@@ -1325,7 +1329,7 @@
     font-size: 20px;
   }
 
-*/ Below is the styling for Star review in feedback.html */
+/* Below is the styling for Star review in feedback.html */
   .rating {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
@@ -1358,7 +1362,7 @@
     color: rgb(251, 255, 120);
   }
 
-*/ Below is the styling for the table of the form */
+/* Below is the styling for the table of the form */
   .feedback-table {
     width: 100%;
     border-spacing: 0;
@@ -1390,7 +1394,7 @@
     font-size: 20px;
   }
 
-*/ Styling for the submit button in feedback form */
+/* Styling for the submit button in feedback form. */
 
   .submit-button {
     background-color: #4caf50;
