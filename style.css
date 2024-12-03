@@ -4,63 +4,63 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Lato", "Times New Roman", sans-serif;
-}
+  }
   
-/* Enables smooth scrolling for the entire website and removes horizontal scrolling. */
-html {
+  /* Enables smooth scrolling for the entire website and removes horizontal scrolling. */
+  html {
     scroll-behavior: smooth;
     scroll-padding-top: 5.5rem;
     font-size: 16px;
     overflow-x: hidden;
-}
-
-/* Below are the keyframes for the fade-in animation. */
-
-@keyframes fadeInUp {
-0% {
-    transform: translateY(100%);
-    opacity: 0;
-}
-100% {
-    transform: translateY(0%);
-    opacity: 1;
-}
-}
-
-/* Below is the class for the fade-in animation. */
-.fadeInUp-animation {
+  }
+  
+  /* Below are the keyframes for the fade-in animation. */
+  
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  
+  /* Below is the class for the fade-in animation. */
+  .fadeInUp-animation {
     animation: 1.5s fadeInUp;
-}
-
-/* Sets all list style items to none */
-li {
+  }
+  
+  /* Sets all list style items to none */
+  li {
     list-style: none;
-}
-    
-    /* unvisited link */
-a:link {
+  }
+  
+  /* unvisited link */
+  a:link {
     color: white;
-}
-    
-    /* visited link */
-a:visited {
+  }
+  
+  /* visited link */
+  a:visited {
     color: white;
-}
-    
-    /* mouse over link */
-a:hover {
+  }
+  
+  /* mouse over link */
+  a:hover {
     color: lightblue;
     text-decoration: none;
-}
-
+  }
+  
   /* selected link */
-a:active {
+  a:active {
     color: gray;
-}
-
-/* Everything below is for the navigation bar. */
-
-.navbar {
+  }
+  
+  /* Everything below is for the navigation bar. */
+  
+  .navbar {
     display: flex;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.6);
@@ -72,9 +72,9 @@ a:active {
     color: white;
     padding: 2px 0;
     z-index: 1000;
-}
+  }
   
-.navbar .nav-styling {
+  .navbar .nav-styling {
     color: #f2f2f2;
     text-align: center;
     padding: 1rem 2rem;
@@ -82,48 +82,48 @@ a:active {
     font-size: 18px;
     width: 140px;
     cursor: pointer;
-}
+  }
   
-.navbar .nav-styling:hover {
+  .navbar .nav-styling:hover {
     background-color: #555;
     border-radius: 10px;
     position: relative;
-}
-
-.navbar img {
+  }
+  
+  .navbar img {
     display: block;
     padding-top: 2px;
     padding-left: 0.8rem;
     height: 50px;
     width: auto;
-}
-
-.nav-links a {
+  }
+  
+  .nav-links a {
     display: block;
     text-align: center;
     padding: 1rem 2rem;
     text-decoration: none;
-}
-
-.nav-links:hover {
+  }
+  
+  .nav-links:hover {
     background-color: #555;
     border-radius: 10px;
-}
+  }
   
   /* Styling for navigation menu. */
-.menu {
+  .menu {
     display: flex;
     gap: 1rem;
     font-size: 18px;
-}
+  }
   
   /* Dropdown Menu Styling */
   ul li:hover ul.dropdown-content {
     display: block;
-}
+  }
   
   /* Styles the dropdown content (hidden by default) */
-.dropdown-content {
+  .dropdown-content {
     display: none;
     position: absolute;
     top: 100%;
@@ -133,59 +133,56 @@ a:active {
     width: 140px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-}
+  }
   
   /* Style the links inside the dropdown menu. */
-.dropdown-content a {
+  .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-}
+  }
   
   /* Adds a grey background to dropdown links on hover. */
-.dropdown-content a:hover {
+  .dropdown-content a:hover {
     background-color: #ddd;
     text-decoration: none;
     border-radius: 10px;
     color: black;
-}
+  }
   
-    /* End of Dropdown Menu Styling. */
+  /* End of Dropdown Menu Styling. */
   
-    /* End of Navigation Bar Styling. */
-
-    /* Everything styles all footers on all webpages. */
-
-footer {
+  /* End of Navigation Bar Styling. */
+  
+  /* Everything styles all footers on all webpages. */
+  
+  footer {
     color: #ddd;
-} 
-
-footer .footer-dontsueplz {
     background-color: #2e2e2e;
     text-align: center;
-}
-
-    /* Sets the background of all article elements. */
-
-article {
+  }
+  
+  /* Sets the background of all article elements. */
+  
+  article {
     background-color: #171717;
-}
-
-    /* Below styles the article element in index.html. */
-.article-main {
+  }
+  
+  /* Below styles the article element in index.html. */
+  .article-main {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:#171717;
-} 
+    background-color: #171717;
+  }
   
-.article-top {
+  .article-top {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     background-image: url(./images/article-main-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -193,57 +190,57 @@ article {
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
-}
-
-.article-top img {
+  }
+  
+  .article-top img {
     width: 40vw;
     color: #ddd;
     margin-top: 30vh;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 35px;
-}
-
-.article-top p {
+  }
+  
+  .article-top p {
     color: #ddd;
     font-size: 2rem;
     margin-left: 20%;
     margin-right: 20%;
     height: 100px;
     text-align: center;
-}
-
-.article-top a {
+  }
+  
+  .article-top a {
     margin-top: 20vh;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     text-decoration: none;
     position: relative;
     bottom: 40px;
     font-size: 4rem;
-    transition: font-size .3s ease;
-}
-
-.article-top a:hover {
+    transition: font-size 0.3s ease;
+  }
+  
+  .article-top a:hover {
     font-size: 6rem;
-}
-
-/* Styling for the disclaimer in index.html. */
-
-.disclaimer {
-  background-color: beige;
-  padding: 10px;
-  margin: 2rem;
-  border-radius: 10px;
-}
-
-.disclaimer p {
-  font-size: 20px;
-}
-
-/* Styling for interactive sliding boxes in index.html. */
-
-.triple-options {
+  }
+  
+  /* Styling for the disclaimer in index.html. */
+  
+  .disclaimer {
+    background-color: beige;
+    padding: 10px;
+    margin: 2rem;
+    border-radius: 10px;
+  }
+  
+  .disclaimer p {
+    font-size: 20px;
+  }
+  
+  /* Styling for interactive sliding boxes in index.html. */
+  
+  .triple-options {
     width: 100%;
     height: 100%;
     margin-top: 2rem;
@@ -252,9 +249,9 @@ article {
     flex-direction: column;
     margin-bottom: 0;
     gap: 2rem;
-}
+  }
   
-.wrapper {
+  .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -264,31 +261,31 @@ article {
     margin-right: 2rem;
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0px 10px 30px 5px rgba(0,0,0,0.8);
-}
+    box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.8);
+  }
   
-.wrapper h2 {
+  .wrapper h2 {
     font-size: 2rem;
     color: #ddd;
     padding: 10px;
-}
+  }
   
-.wrapper p {
+  .wrapper p {
     font-size: 1rem;
     color: #ddd;
     padding: 10px;
-}
+  }
   
-.container {
+  .container {
     width: 100%;
     height: 400px;
     display: flex;
     justify-content: center;
     gap: 10px;
     padding: 20px;
-}
+  }
   
-.card {
+  .card {
     min-width: 80px;
     width: 80px;
     border-radius: 2rem;
@@ -297,11 +294,11 @@ article {
     margin: 0 10px;
     display: block;
     padding-top: 320px;
-    transition: .6s cubic-bezier(.28,-0.03,0,.99);
-    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
-}
+    transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+  }
   
-.description a {
+  .description a {
     text-align: center;
     display: block;
     font-size: 2rem;
@@ -313,86 +310,85 @@ article {
     color: aliceblue;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-}
+  }
   
-.description a:hover {
+  .description a:hover {
     color: #171717;
-}
+  }
   
-.icon img {
+  .icon img {
     border-radius: 50%;
     cursor: pointer;
     position: relative;
     bottom: 86px;
     border: #ddd solid 2px;
-    box-shadow: 0px 10px 30px 2px rgba(0,0,0,0.8);
-}
+    box-shadow: 0px 10px 30px 2px rgba(0, 0, 0, 0.8);
+  }
   
-.description > a {
+  .description > a {
     overflow: hidden;
     opacity: 0;
     pointer-events: none;
     transform: translateY(20px);
-    transition-delay: .3s;
-    transition: all .3s ease;
-}
+    transition-delay: 0.3s;
+    transition: all 0.3s ease;
+  }
   
-.container input {
+  .container input {
     display: none;
-}
+  }
   
-.container input:checked + label {
+  .container input:checked + label {
     width: 80vw;
-}
+  }
   
-.container input:checked + label .description a {
+  .container input:checked + label .description a {
     opacity: 1 !important;
     pointer-events: auto !important;
     text-transform: uppercase;
     transform: translateY(0) !important;
     font-weight: bold;
-}
+  }
   
-.container input:checked + label .icon {
-    transition: all .3s ease;
-}
-  
+  .container input:checked + label .icon {
+    transition: all 0.3s ease;
+  }
   
   /* Background images for all the cards. */
   
-.card[for="c1"] {
+  .card[for="c1"] {
     background-image: url(./images/cake-card.jpg);
-}
-.card[for="c2"] {
+  }
+  .card[for="c2"] {
     background-image: url(./images/donut-card.jpg);
-}
-.card[for="c3"] {
+  }
+  .card[for="c3"] {
     background-image: url(./images/croissants-card.jpg);
-}
+  }
   
-.card[for="c4"] {
+  .card[for="c4"] {
     background-image: url(./images/western-card.jpg);
-}
-.card[for="c5"] {
+  }
+  .card[for="c5"] {
     background-image: url(./images/chinese-card.jpg);
-}
-.card[for="c6"] {
+  }
+  .card[for="c6"] {
     background-image: url(./images/malay-card.jpg);
-}
-
-.card[for="c7"] {
+  }
+  
+  .card[for="c7"] {
     background-image: url(./images/coffee-card.jpg);
-}
-.card[for="c8"] {
+  }
+  .card[for="c8"] {
     background-image: url(./images/tea-card.jpg);
-}
-.card[for="c9"] {
+  }
+  .card[for="c9"] {
     background-image: url(./images/juice-card.jpg);
-}
-
-/* Start of About Us Styling */
-
-.aboutusart-main {
+  }
+  
+  /* Start of About Us Styling */
+  
+  .aboutusart-main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -400,64 +396,69 @@ article {
     background-position: center;
   }
   
-.munchies-logo-con {
+  .munchies-logo-con {
     margin-top: 2rem;
-}
+  }
   
-.aboutusart-main h1 {
+  .aboutusart-main h1 {
     margin-top: 6rem;
     font-size: 5rem;
     color: #ddd;
-}
-
-.aboutusart-main h2 {
+  }
+  
+  .aboutusart-main h2 {
     font-size: 2rem;
     text-align: center;
     color: #ddd;
     margin-bottom: 1rem;
-}
+  }
   
-.aboutusart-main h3 {
+  .aboutusart-main h3 {
     color: #ddd;
     font-size: 24px;
-}
+  }
   
-.aboutusart-main h4 {
+  .aboutusart-main h4 {
     color: transparent;
-    background: 
-      linear-gradient(to right, #92ccdd, 
-      #c7eff0, #f5d5fd, #fdc4ec, #ffc2cb); 
+    background: linear-gradient(
+      to right,
+      #92ccdd,
+      #c7eff0,
+      #f5d5fd,
+      #fdc4ec,
+      #ffc2cb
+    );
     background-clip: initial;
     -webkit-background-clip: text;
     font-size: 18px;
-}
+  }
   
-.infowrapper p {
+  .infowrapper p {
     margin-top: 1rem;
     color: #ddd;
-}
+  }
   
-.munchies-desc-con {
+  .munchies-desc-con {
     margin-top: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
     background-color: rgba(0, 0, 0, 0.2);
-      backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
     border-radius: 10px;
-}
+  }
   
-.munchies-desc-con p {
+  .munchies-desc-con p {
     font-size: 2rem;
     color: #ddd;
     text-align: center;
     padding: 1rem;
-}
+  }
   
-.team {
+  .team {
     margin-top: 2rem;
-}
+  }
   
-.infowrapper {
+  .infowrapper {
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -469,30 +470,30 @@ article {
     padding: 20px;
     align-items: center;
     justify-content: center;
-}
+  }
   
-.infobox img {
+  .infobox img {
     width: 80%;
     height: auto;
     border-radius: 10px;
-}
+  }
   
-.infobox {
+  .infobox {
     text-align: center;
     background-color: #171717;
     padding: 3rem;
     border-radius: 12px;
     width: 30%;
     min-height: 600px;
-}
+  }
   
-.aboutusdescription {
+  .aboutusdescription {
     padding: 20px;
-}
-
-    /* Below is general styling for all food webpages. */
-
-.food-sections {
+  }
+  
+  /* Below is general styling for all food webpages. */
+  
+  .food-sections {
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -500,9 +501,9 @@ article {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-}
+  }
   
-.food-wrapper {
+  .food-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -512,33 +513,33 @@ article {
     margin-right: 2rem;
     border-radius: 10px;
     padding: 2rem;
-    box-shadow: 0px 10px 30px 5px rgba(0,0,0,0.8);
-}
+    box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.8);
+  }
   
-.food-wrapper a {
+  .food-wrapper a {
     font-size: 2rem;
     color: #ddd;
     text-decoration: none;
     font-weight: bold;
-} 
+  }
   
-.food-wrapper a:hover {
+  .food-wrapper a:hover {
     color: #c7eff0;
-    transition: all .3s ease;
-} 
+    transition: all 0.3s ease;
+  }
   
-.food-wrapper hr {
+  .food-wrapper hr {
     border-top: 20px;
     width: 100%;
     margin-top: 1rem;
     margin-bottom: 2rem;
-}
+  }
   
-.food-wrapper ul{
+  .food-wrapper ul {
     padding-left: 2rem;
-}
+  }
   
-.food-wrapper ul li {
+  .food-wrapper ul li {
     list-style-type: circle;
     font-size: 1.5rem;
     color: #ddd;
@@ -546,9 +547,9 @@ article {
     text-align: justify;
     padding-left: 1rem;
     padding-right: 2rem;
-}
-
-.food-item {
+  }
+  
+  .food-item {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -561,36 +562,36 @@ article {
     position: relative;
     cursor: pointer;
     overflow: hidden;
-}
+  }
   
   .food-item:hover {
     background-color: #555;
     border-radius: 1rem;
-}
+  }
   
   .food-text {
     z-index: 2;
     width: 100%;
     height: 100%;
-    opacity: 0; /* Initially hidden */ 
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */ 
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
+  }
   
-.food-text:hover {
-    opacity: 1; /* Show the text */ 
+  .food-text:hover {
+    opacity: 1; /* Show the text */
     border-radius: 1rem;
-}
+  }
   
-.food-text h2 {
+  .food-text h2 {
     color: white;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-}
+  }
   
-.background-blur {
+  .background-blur {
     position: absolute;
     top: 0;
     left: 0;
@@ -600,25 +601,25 @@ article {
     background-position: center;
     transition: filter 0.3s ease;
     z-index: 1;
-}
+  }
   
   .food-item:hover .background-blur {
     filter: brightness(0.7) blur(3px);
     transform: scale(1.02);
     transition: all 0.3s ease;
-}
-
-    /* Below is general styling for all article elements in all food webpages. */
-
-.article-global {
+  }
+  
+  /* Below is general styling for all article elements in all food webpages. */
+  
+  .article-global {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.banner-text {
+  }
+  
+  .banner-text {
     z-index: 1;
     text-align: center;
     font-size: 4rem;
@@ -626,9 +627,9 @@ article {
     top: 22vh;
     border-radius: 5px;
     color: #ddd;
-}
-
-.food-container{
+  }
+  
+  .food-container {
     padding: 1.5rem;
     border-radius: 10px;
     background-color: #333;
@@ -639,13 +640,13 @@ article {
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
-}
-
+  }
+  
   /* Pop-up box */
-.popup {
+  .popup {
     display: none; /* Hidden by default */
     position: fixed;
-    background-color:#333;
+    background-color: #333;
     top: 50%;
     left: 50%;
     width: 80vw;
@@ -655,13 +656,13 @@ article {
     justify-content: center;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px; 
+    padding: 20px;
     z-index: 1000;
     margin-left: 0;
     margin-right: 1rem;
-}
+  }
   
-.popup-table {
+  .popup-table {
     margin: auto;
     table-layout: fixed;
     border-collapse: collapse;
@@ -673,52 +674,53 @@ article {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-}
+  }
   
-.popup-table caption {
+  .popup-table caption {
     font-size: 1.5rem;
     font-weight: bold;
     color: #333;
     padding: 10px;
     background-color: #f0f0f0;
     border-bottom: 2px solid #ddd;
-}
+  }
   
-.popup-table th, .popup-table td {
+  .popup-table th,
+  .popup-table td {
     padding: 12px;
     text-align: center;
     border: 1px solid #ddd;
-}
-
-.popup-table th {
+  }
+  
+  .popup-table th {
     border-radius: 8px;
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
     height: 10vh;
-}
+  }
   
-.popup-table td {
+  .popup-table td {
     background-color: #fff;
     height: 10vh;
-}
-
-.popup-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
+  }
   
-.popup-table tr:hover {
+  .popup-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .popup-table tr:hover {
     background-color: #e0e0e0;
-}
-
-.popup-table img {
+  }
+  
+  .popup-table img {
     max-width: 50px;
     height: auto;
     border-radius: 50%;
-}
+  }
   
-.overlay {
+  .overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -727,14 +729,14 @@ article {
     background: rgba(0, 0, 0, 0.5);
     display: none; /* Hidden by default */
     z-index: 999;
-}
+  }
   
   .popup-description {
     display: flex;
     width: auto;
     flex-direction: column;
     padding: 1rem;
-}
+  }
   
   .popup-description p {
     color: #ddd;
@@ -745,41 +747,41 @@ article {
     margin-top: 8px;
     padding-left: 2rem;
     padding-right: 2rem;
-}
+  }
   
   .popup-description h3 {
     font-size: 2rem;
     color: #ddd;
-}
+  }
   
   .popup-image {
     width: 100%;
     max-height: 50vh; /* Ensure the image doesn't exceed half the viewport height */
     margin: 50px;
     border-radius: 15px;
-}
+  }
   
   .close-button {
-    border:none;
+    border: none;
     border-radius: 10px;
     background: lightcoral;
-    box-shadow:1px 1px 2px rgba(21, 21, 21, 0.1);
-    cursor:pointer;
-    font-size:1.5rem;
-    font-family: 'Lato', sans-serif;
-    padding:.25rem 2rem;
-    transition:all .25s ease-in-out; 
+    box-shadow: 1px 1px 2px rgba(21, 21, 21, 0.1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+    padding: 0.25rem 2rem;
+    transition: all 0.25s ease-in-out;
     margin-top: 1rem;
-}
+  }
   
   .close-button:hover {
     background-color: rgb(255, 36, 36);
-}
+  }
   
-/* Cakes.html */
-.top-banner-cakes {
+  /* Cakes.html */
+  .top-banner-cakes {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     background-image: url(./images/banners/cakes-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -787,62 +789,62 @@ article {
     background-attachment: fixed;
     width: 100%;
     height: 50vh;
-}
+  }
   
-.cakes-con1 {
+  .cakes-con1 {
     background-image: url(./images/containers/secretrecipe-container.png);
     background-position: left;
-}
+  }
   
-.cakes-con2 {
+  .cakes-con2 {
     background-image: url(./images/containers/mons-container.png);
     background-position: left;
-}
+  }
   
-.cakesitem1 .background-blur {
+  .cakesitem1 .background-blur {
     background-image: url(./images/desserts/choco-indulge.jpg);
     border-radius: 1rem;
-}
+  }
   
-.cakesitem2 .background-blur {
+  .cakesitem2 .background-blur {
     background-image: url(./images/desserts/hokkaido-cheese.jpg);
     border-radius: 1rem;
-}
+  }
   
-.cakesitem3 .background-blur {
+  .cakesitem3 .background-blur {
     background-image: url(./images/desserts/red-velvet.jpg);
     border-radius: 1rem;
-}
+  }
   
-.cakesitem4 .background-blur {
+  .cakesitem4 .background-blur {
     background-image: url(./images/desserts/choco-odyssey.jpg);
     border-radius: 1rem;
-}
+  }
   
-.cakesitem5 .background-blur {
+  .cakesitem5 .background-blur {
     background-image: url(./images/desserts/strawberry-shortcake.jpg);
     border-radius: 1rem;
-}
+  }
   
-.cakesitem6 .background-blur {
+  .cakesitem6 .background-blur {
     background-image: url(./images/desserts/mango-shortcake.jpg);
     border-radius: 1rem;
-}
+  }
   
-.cakesitem7 .background-blur {
+  .cakesitem7 .background-blur {
     background-image: url(./images/desserts/pandan-cake.jpg);
     border-radius: 1rem;
-}
+  }
   
-.cakesitem8 .background-blur {
+  .cakesitem8 .background-blur {
     background-image: url(./images/desserts/black-forest.jpg);
     border-radius: 1rem;
-}
-
-/* Donuts.html */
-.top-banner-donuts {
+  }
+  
+  /* Donuts.html */
+  .top-banner-donuts {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     background-image: url(./images/banners/donut-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -850,37 +852,37 @@ article {
     background-attachment: fixed;
     width: 100%;
     height: 50vh;
-}
+  }
   
-.donuts-con1 {
+  .donuts-con1 {
     background-image: url(./images/containers/bigapple-container.png);
     background-position: left;
-}
+  }
   
-.donutsitem1 .background-blur {
+  .donutsitem1 .background-blur {
     background-image: url(./images/desserts/berry-bliss.jpg);
     border-radius: 1rem;
-}
+  }
   
-.donutsitem2 .background-blur {
+  .donutsitem2 .background-blur {
     background-image: url(./images/desserts/choco-sweet.jpg);
     border-radius: 1rem;
-}
+  }
   
-.donutsitem3 .background-blur {
+  .donutsitem3 .background-blur {
     background-image: url(./images/desserts/chocoholic.jpg);
     border-radius: 1rem;
-}
+  }
   
-.donutsitem4 .background-blur {
+  .donutsitem4 .background-blur {
     background-image: url(./images/desserts/heycheese.jpg);
     border-radius: 1rem;
-}
- 
-/* croissant.html */
-.top-banner-croissants {
+  }
+  
+  /* croissant.html */
+  .top-banner-croissants {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     background-image: url(./images/banners/croissants-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -888,38 +890,38 @@ article {
     background-attachment: fixed;
     width: 100%;
     height: 50vh;
-}
+  }
   
-.croissant-con1 {
+  .croissant-con1 {
     background-image: url(./images/containers/hazukido-container.png);
     background-position: left;
-}
+  }
   
-.croissantsitem1 .background-blur {
+  .croissantsitem1 .background-blur {
     background-image: url(./images/desserts/salted-egg-croissant.jpg);
     border-radius: 1rem;
-}
+  }
   
-.croissantsitem2 .background-blur {
+  .croissantsitem2 .background-blur {
     background-image: url(./images/desserts/hazelnut-chocolate-croissant.jpg);
     border-radius: 1rem;
-}
+  }
   
-.croissantsitem3 .background-blur {
+  .croissantsitem3 .background-blur {
     background-image: url(./images/desserts/lemon-icing-croissant.jpg);
     border-radius: 1rem;
-}
+  }
   
-.croissantsitem4 .background-blur {
+  .croissantsitem4 .background-blur {
     background-image: url(./images/desserts/durian-custard-croissant.jpg);
     border-radius: 1rem;
-}
+  }
   
   /* western.html */
   
-.top-banner-western {
+  .top-banner-western {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     background-image: url(./images/banners/western-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -927,63 +929,63 @@ article {
     background-attachment: fixed;
     width: 100%;
     height: 50vh;
-}
-
-.western-con1 {
+  }
+  
+  .western-con1 {
     background-image: url(./images/containers/primalsteakhouse-container.png);
     background-position: left;
-}
-
-.western-con2 {
+  }
+  
+  .western-con2 {
     background-image: url(./images/containers/howdy-container.png);
     background-position: left;
-}
-
-.westernitem1 .background-blur {
+  }
+  
+  .westernitem1 .background-blur {
     background-image: url(./images/meals/Cotedebouef.jpg);
     border-radius: 1rem;
-}
-
-.westernitem2 .background-blur {
+  }
+  
+  .westernitem2 .background-blur {
     background-image: url(./images/meals/porterhouse.jpg);
     border-radius: 1rem;
-}
-
-.westernitem3 .background-blur {
+  }
+  
+  .westernitem3 .background-blur {
     background-image: url(./images/meals/angusscotchfillet.jpg);
     border-radius: 1rem;
-}
-
-.westernitem4 .background-blur {
+  }
+  
+  .westernitem4 .background-blur {
     background-image: url(./images/meals/cpas.jpg);
     border-radius: 1rem;
-}
-
-.westernitem5 .background-blur {
+  }
+  
+  .westernitem5 .background-blur {
     background-image: url(./images/meals/fishnchips.jpg);
     border-radius: 1rem;
-}
-
-.westernitem6 .background-blur {
+  }
+  
+  .westernitem6 .background-blur {
     background-image: url(./images/meals/grilledlamb.jpg);
     border-radius: 1rem;
-}
-
-.westernitem7 .background-blur {
+  }
+  
+  .westernitem7 .background-blur {
     background-image: url(./images/meals/burger.jpg);
     border-radius: 1rem;
-}
-
-.westernitem8 .background-blur {
+  }
+  
+  .westernitem8 .background-blur {
     background-image: url(./images/meals/lambshank.jpg);
     border-radius: 1rem;
-}
-
-    /* malay.html */
-
-.top-banner-malay {
+  }
+  
+  /* malay.html */
+  
+  .top-banner-malay {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     background-image: url(./images/banners/malay-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -991,63 +993,63 @@ article {
     background-attachment: fixed;
     width: 100%;
     height: 50vh;
-}
+  }
   
-.malay-con1 {
+  .malay-con1 {
     background-image: url(./images/containers/papparich-container.png);
     background-position: left;
-}
-    
-.malay-con2 {
+  }
+  
+  .malay-con2 {
     background-image: url(./images/containers/duduksama-container.png);
     background-position: left;
-}
+  }
   
-.malayitem1 .background-blur {
+  .malayitem1 .background-blur {
     background-image: url("./images/meals/nasilemak.jpg");
     border-radius: 1rem;
-}
+  }
   
-.malayitem2 .background-blur {
+  .malayitem2 .background-blur {
     background-image: url("./images/meals/nasigorengkampung.jpg");
     border-radius: 1rem;
-}
+  }
   
-.malayitem3 .background-blur {
+  .malayitem3 .background-blur {
     background-image: url("./images/meals/meegoreng.jpg");
     border-radius: 1rem;
-}
+  }
   
-.malayitem4 .background-blur {
+  .malayitem4 .background-blur {
     background-image: url("./images/meals/ipohkt.jpg");
     border-radius: 1rem;
-}
+  }
   
-.malayitem5 .background-blur {
+  .malayitem5 .background-blur {
     background-image: url("./images/meals/laksasarawak.jpg");
     border-radius: 1rem;
-}
+  }
   
-.malayitem6 .background-blur {
+  .malayitem6 .background-blur {
     background-image: url("./images/meals/kolomee.jpg");
     border-radius: 1rem;
-}
+  }
   
-.malayitem7 .background-blur {
+  .malayitem7 .background-blur {
     background-image: url("./images/meals/meesiam.jpg");
     border-radius: 1rem;
-}
+  }
   
-.malayitem8 .background-blur {
+  .malayitem8 .background-blur {
     background-image: url("./images/meals/nasilemakbiasa.jpg");
     border-radius: 1rem;
-}
+  }
   
   /* chinese.html */
   
-.top-banner-chinese {
+  .top-banner-chinese {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     background-image: url("./images/banners/chinese-banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1055,63 +1057,63 @@ article {
     background-attachment: fixed;
     width: 100%;
     height: 50vh;
-}
+  }
   
-.chinese-con1 {
+  .chinese-con1 {
     background-image: url(./images/containers/dintaifung-container.png);
     background-position: left;
-}
+  }
   
-.chinese-con2 {
+  .chinese-con2 {
     background-image: url(./images/containers/rockroad-container.png);
     background-position: left;
-}
+  }
   
-.chineseitem1 .background-blur {
+  .chineseitem1 .background-blur {
     background-image: url("./images/meals/BBNS.jpg");
     border-radius: 1rem;
-}
+  }
   
-.chineseitem2 .background-blur {
+  .chineseitem2 .background-blur {
     background-image: url("./images/meals/CNS.jpg");
     border-radius: 1rem;
-}
+  }
   
-.chineseitem3 .background-blur {
+  .chineseitem3 .background-blur {
     background-image: url("./images/meals/friedporkchop.jpg");
     border-radius: 1rem;
-}
+  }
   
-.chineseitem4 .background-blur {
+  .chineseitem4 .background-blur {
     background-image: url("./images/meals/porkfriedrice.jpg");
     border-radius: 1rem;
-}
+  }
   
-.chineseitem5 .background-blur {
+  .chineseitem5 .background-blur {
     background-image: url("./images/meals/shss.jpg");
     border-radius: 1rem;
-}
+  }
   
-.chineseitem6 .background-blur {
+  .chineseitem6 .background-blur {
     background-image: url("./images/meals/hainanesecrab.jpg");
     border-radius: 1rem;
-}
+  }
   
-.chineseitem7 .background-blur {
+  .chineseitem7 .background-blur {
     background-image: url("./images/meals/yangzhou.jpg");
     border-radius: 1rem;
-}
+  }
   
-.chineseitem8 .background-blur {
+  .chineseitem8 .background-blur {
     background-image: url("./images/meals/braisednoodles.jpg");
     border-radius: 1rem;
-}
+  }
   
   /* coffee.html */
   
-.top-banner-coffee {
+  .top-banner-coffee {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     background-image: url("./images/banners/coffee-banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1119,63 +1121,63 @@ article {
     background-attachment: fixed;
     width: 100%;
     height: 50vh;
-}
+  }
   
-.coffee-con1 {
+  .coffee-con1 {
     background-image: url(./images/containers/starbucks-container.png);
     background-position: left;
-}
+  }
   
-.coffee-con2 {
+  .coffee-con2 {
     background-image: url(./images/containers/zus-container.png);
     background-position: right;
-}
+  }
   
-.coffeeitem1 .background-blur {
+  .coffeeitem1 .background-blur {
     background-image: url(./images/drinks/caramelmacchiato.jpg);
     border-radius: 1rem;
-}
+  }
   
-.coffeeitem2 .background-blur {
+  .coffeeitem2 .background-blur {
     background-image: url(./images/drinks/pumpkinspicelatte.jpg);
     border-radius: 1rem;
-}
+  }
   
-.coffeeitem3 .background-blur {
+  .coffeeitem3 .background-blur {
     background-image: url(./images/drinks/caffemocha.jpg);
     border-radius: 1rem;
-}
+  }
   
-.coffeeitem4 .background-blur {
+  .coffeeitem4 .background-blur {
     background-image: url(./images/drinks/vsccoldbrew.jpg);
     border-radius: 1rem;
-}
+  }
   
-.coffeeitem5 .background-blur {
+  .coffeeitem5 .background-blur {
     background-image: url(./images/drinks/zus-gula-melaka.jpg);
     border-radius: 1rem;
-}
+  }
   
-.coffeeitem6 .background-blur {
+  .coffeeitem6 .background-blur {
     background-image: url(./images/drinks/zus-thunder.jpg);
     border-radius: 1rem;
-}
+  }
   
-.coffeeitem7 .background-blur {
+  .coffeeitem7 .background-blur {
     background-image: url(./images/drinks/genmailatte.jpg);
     border-radius: 1rem;
-}
+  }
   
-.coffeeitem8 .background-blur {
+  .coffeeitem8 .background-blur {
     background-image: url(./images/drinks/blacksugar-latte.jpg);
     border-radius: 1rem;
-}
+  }
   
   /* coffee.html */
   
-.top-banner-tea {
+  .top-banner-tea {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     background-image: url(./images/banners/tea-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1183,38 +1185,38 @@ article {
     background-attachment: fixed;
     width: 100%;
     height: 50vh;
-}
+  }
   
-.tea-con1 {
+  .tea-con1 {
     background-image: url(./images/containers/chagee-container.png);
     background-position: left;
-}
+  }
   
-.teaitem1 .background-blur {
+  .teaitem1 .background-blur {
     background-image: url(./images/drinks/jasminegreentea.jpg);
     border-radius: 1rem;
-}
+  }
   
-.teaitem2 .background-blur {
+  .teaitem2 .background-blur {
     background-image: url(./images/drinks/tieguanyin.jpg);
     border-radius: 1rem;
-}
+  }
   
-.teaitem3 .background-blur {
+  .teaitem3 .background-blur {
     background-image: url(./images/drinks/dahongpao.jpg);
     border-radius: 1rem;
-}
+  }
   
-.teaitem4 .background-blur {
+  .teaitem4 .background-blur {
     background-image: url(./images/drinks/osmanthus.jpg);
     border-radius: 1rem;
-}
+  }
   
   /* html Juices */
   
-.top-banner-juices {
+  .top-banner-juices {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     background-image: url(./images/banners/juice-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1222,61 +1224,61 @@ article {
     background-attachment: fixed;
     width: 100%;
     height: 50vh;
-}
+  }
   
-.juice-con1 {
+  .juice-con1 {
     background-image: url(./images/containers/boost-container.png);
     background-position: left;
-}
+  }
   
-.juice-con2 {
+  .juice-con2 {
     background-image: url(./images/containers/rawkitchen-container.png);
     background-position: left;
-}
+  }
   
-.juiceitem1 .background-blur {
+  .juiceitem1 .background-blur {
     background-image: url(./images/drinks/allberrybang.jpg);
     border-radius: 1rem;
-}
+  }
   
-.juiceitem2 .background-blur {
+  .juiceitem2 .background-blur {
     background-image: url(./images/drinks/cookies&cream.jpg);
     border-radius: 1rem;
-}
+  }
   
-.juiceitem3 .background-blur {
+  .juiceitem3 .background-blur {
     background-image: url(./images/drinks/strawberrysqueeze.jpg);
     border-radius: 1rem;
-}
+  }
   
-.juiceitem4 .background-blur {
+  .juiceitem4 .background-blur {
     background-image: url(./images/drinks/chocolate.jpg);
     border-radius: 1rem;
-}
+  }
   
-.juiceitem5 .background-blur {
+  .juiceitem5 .background-blur {
     background-image: url(./images/drinks/celeryjuice.jpg);
     border-radius: 1rem;
-}
+  }
   
-.juiceitem6 .background-blur {
+  .juiceitem6 .background-blur {
     background-image: url(./images/drinks/virusvigilante.jpg);
     border-radius: 1rem;
-}
+  }
   
-.juiceitem7 .background-blur {
+  .juiceitem7 .background-blur {
     background-image: url(./images/drinks/greencloud.jpg);
     border-radius: 1rem;
-}
+  }
   
-.juiceitem8 .background-blur {
+  .juiceitem8 .background-blur {
     background-image: url(./images/drinks/passionfruit.jpg);
     border-radius: 1rem;
-}
-
-    /* Feedback Section */
-
-.article-feedback {
+  }
+  
+  /* Feedback Section */
+  
+  .article-feedback {
     width: 100%;
     height: 100%;
     display: flex;
@@ -1284,91 +1286,94 @@ article {
     align-items: center;
     background-image: url(./images/feedback-background.jpg);
     background-size: cover;
-}
-
-.feedback-section h1 {
+  }
+  
+  .feedback-section h1 {
     font-size: 40px;
     color: #ddd;
-}
+  }
   
-.feedback-section td {
+  .feedback-section td {
     font-size: 20px;
-}
+  }
   
-.feedback-section {
+  .feedback-section {
     width: 100%;
-}
+  }
   
-.feedback-container {
+  .feedback-container {
     background-color: #2e2e2e;
-    box-shadow: 0px 10px 30px 5px rgba(0,0,0,0.8);
+    box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     margin: 105px 300px;
     text-align: center;
     padding: 20px;
     color: #ddd;
-}
+  }
   
-.feedback-container fieldset {
+  .feedback-container fieldset {
     margin: 20px;
     padding: 10px;
     border: hidden;
-}
+  }
   
-.feedback-container legend {
+  .feedback-container legend {
     font-size: 20px;
-}
+  }
   
-.rating {
+  .rating {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
     margin: auto;
     padding-bottom: 0.6rem;
-}
-   
-.star {
+  }
+  
+  .star {
     font-size: 40px;
     cursor: pointer;
-}
-   
-.one {
-    color: rgb(251, 255, 120);
-}
-   
-.two {
-    color: rgb(251, 255, 120); 
-}
-   
-.three {
-    color: rgb(251, 255, 120);
-}
-   
-.four {
-    color: rgb(251, 255, 120);
-}
-   
-.five {
-    color: rgb(251, 255, 120);
-}
+  }
   
-.feedback-table {
+  .one {
+    color: rgb(251, 255, 120);
+  }
+  
+  .two {
+    color: rgb(251, 255, 120);
+  }
+  
+  .three {
+    color: rgb(251, 255, 120);
+  }
+  
+  .four {
+    color: rgb(251, 255, 120);
+  }
+  
+  .five {
+    color: rgb(251, 255, 120);
+  }
+  
+  .feedback-table {
     width: 100%;
     border-spacing: 0;
     border-collapse: collapse;
     border-radius: 20px;
-}
+  }
   
-.feedback-table td:nth-child(1) {  
+  .feedback-table td:nth-child(1) {
     width: 8%;
-}
+  }
   
-.feedback-table td:nth-child(2) {  
+  .feedback-table td:nth-child(2) {
     width: 50%;
     text-align: left;
     padding-left: 20px;
-}
+  }
   
-.feedback-table input[type="text"], .feedback-table input[type="email"], .feedback-table select, .feedback-table textarea {
+  .feedback-table input[type="text"],
+  .feedback-table input[type="email"],
+  .feedback-table select,
+  .feedback-table textarea {
     width: calc(100% - 20px);
     padding: 8px;
     border: 1px solid white;
@@ -1377,10 +1382,10 @@ article {
     background-color: black;
     color: white;
     font-size: 20px;
-}
+  }
   
-.submit-button {
-    background-color: #4CAF50;
+  .submit-button {
+    background-color: #4caf50;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -1389,12 +1394,13 @@ article {
     width: 20%;
     font-size: 20px;
     border-radius: 10px;
-}
+  }
   
-.submit-button:hover {
+  .submit-button:hover {
     background-color: #45a049;
-}
+  }
   
-.submit-button:active {
+  .submit-button:active {
     background-color: #3e8e41;
-}
+  }
+  
