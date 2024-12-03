@@ -17,20 +17,23 @@
 
     <!-- Script Starts Here -->
      <script>
+        // Function to show popup
         function showPopup(popupId) {
           const popup = document.getElementById(popupId);
           popup.style.display = 'flex';
           const overlay = document.getElementById('overlay');
           overlay.style.display = 'block';
         }
-        
+
+        // Function to close popup
         function closePopup(popupId) {
           const popup = document.getElementById(popupId);
           popup.style.display = 'none';
           const overlay = document.getElementById('overlay');
           overlay.style.display = 'none';
         }
-
+        
+        // Function to hide popup(for overlay)
         function hidePopup() {
           for (let i = 1; i <= 12; i++) {
           const popup = document.getElementById(`popup${i}`);
